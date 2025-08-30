@@ -4,7 +4,7 @@ import { createProxyMiddleware } from "http-proxy-middleware";
 const app = express();
 
 app.use("/", createProxyMiddleware({
-    target: "http://167.172.89.37:2002/", // server tujuan
+    target: "http://167.172.89.37:2002", // server tujuan
     changeOrigin: true,
     ws: true
 }));
